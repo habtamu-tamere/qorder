@@ -1,0 +1,57 @@
+<!-- updated-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <input type="text" id="qr-text" placeholder="Enter text or URL">
+        
+        <div class="color-picker">
+            <label for="foreground-color">Foreground Color:</label>
+            <input type="color" id="foreground-color" value="#000000">
+            
+            <label for="background-color">Background Color:</label>
+            <input type="color" id="background-color" value="#ffffff">
+        </div>
+        
+        <button onclick="generateQRCode()">Generate QR Code</button>
+        <button onclick="downloadQRCode()" id="download-btn" disabled>Download QR Code</button>
+        
+        <div id="qr-code"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <input type="text" id="qr-text" placeholder="Enter text or URL">
+        <button onclick="generateQRCode()">Generate QR Code</button>
+        <div id="qr-code"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+-->
